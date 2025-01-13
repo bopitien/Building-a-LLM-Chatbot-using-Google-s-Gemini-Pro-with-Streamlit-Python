@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Retrieve Google API key from environment variables
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 # Check if the API key is available
 if not GOOGLE_API_KEY:
